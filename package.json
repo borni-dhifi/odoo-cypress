@@ -1,0 +1,24 @@
+{
+  "name": "cypress-odoo",
+  "version": "1.0.0",
+  "description": "cypress-odoo️",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/hadooc-dev/ci-test/cypress-odoo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hadooc-dev/ci-test/cypress-odoo/issues"
+  },
+  "homepage": "https://gitlab.com/hadooc-dev/ci-test/cypress-odoo#README",
+  "devDependencies": {
+    "cypress": "^1.0.2"
+  }
+}

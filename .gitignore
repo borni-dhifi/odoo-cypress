@@ -1,0 +1,10 @@
+# dotfiles
+.*
+!.gitignore
+!.gitlab-ci.yml
+# cypress
+node_modules/
+cypress/screenshots/
+cypress/videos/
+# emacs backup files
+*~

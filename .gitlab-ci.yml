@@ -1,0 +1,17 @@
+image: cypress/base
+
+
+stages:
+  - test
+
+
+cypress-e2e:
+    stage: test
+    script:
+        - npm install
+        - $(npm bin)/cypress run
+    artifacts:
+        expire_in: 1 week
+        paths:
+        - cypress/screenshots
+        - cypress/videos
