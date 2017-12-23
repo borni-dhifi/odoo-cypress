@@ -2,21 +2,21 @@
 import api from '../../odoo/api'
 
 
-describe('Cypress For Odoo', function(){
+describe('Cypress For Odoo', () => {
   
   // Login
 
-  context('Login', function(){ 
-      it('Check user/password', function(){ 
+  context('Login', () => { 
+      it('Check user/password', () => {
        cy.Login()
      })
   })
   
    
-  context('Workflow Demo', function(){ 
+  context('Workflow Demo', () => { 
     
    // Example : Create Customer
-   it('Customer',  function(){
+   it('Customer', () => {
        cy.MainMenu('CRM','crm.crm_menu_root')
        cy.SubMenu('Customers','crm.res_partner_menu_crm')
        cy.Button('Create')
@@ -39,7 +39,7 @@ describe('Cypress For Odoo', function(){
         - confirm quoation
         - check state should have  'Sales Order' value
          */
-    it('Quotation',  function(){      
+    it('Quotation', () => { 
        cy.MainMenu('Sales','sale.sale_menu_root')
        cy.SubMenu('Orders','sale.menu_sale_order')       
        cy.Button('Create')
@@ -59,15 +59,15 @@ describe('Cypress For Odoo', function(){
 
     // Add your test case
 
-    it('Your Test Case Name',  function(){ 
+    it('Your Test Case Name', () => {
        //...
        //...
     })   
 
   // Logout
 
-  /*context('Logout', function(){ 
-      it('Logout', function(){ 
+  /*context('Logout', () => { 
+      it('Logout', () => { 
        cy.Logout()
    
      })

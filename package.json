@@ -10,7 +10,7 @@
     "cy_run": "cypress run",
     "cy_run_chrome": "cypress run --browser chrome",
     "cy_run_record": "cypress run --record",
-    "cy_run_chrome_record": "cypress run --browser chrome --record",
+    "cy_run_chrome_record": "cypress run --browser chrome --record"
    },
    "repository": {
     "type": "git",
