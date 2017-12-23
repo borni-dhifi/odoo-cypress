@@ -1,6 +1,6 @@
 
-Framework E2E Testing for Odoo using Cypress
-=============================================
+Odoo Framework E2E Testing using Cypress
+=========================================
 
 
 Using **odoo-cypress**  run your Odoo E2E tests on any CI is very simple. 
@@ -48,9 +48,11 @@ Installation
 
 To use this project locally as a dev dependency for your project: 
 
-    git clone https://github.com/borni-dhifi/odoo-cypress
-    cd odoo-cypress
-    npm install cypress
+```bash
+git clone https://github.com/borni-dhifi/odoo-cypress
+cd odoo-cypress
+npm install cypress
+```
 
 
 Run Test 
@@ -58,20 +60,29 @@ Run Test
 
 Modify file cypress.env.json with your odoo server param:
 
+```bash
     {
      "odoo_url": "http://localhost:8070",
      "database": "cypress2",
      "user": "admin",
      "password": "admin"
     }
+```
 
-To launch the Cypress Test Runner : 
 
-    ./node_modules/.bin/cypress open
-
-To run Test withtout launch Cypress Test Runner: 
-
-    ./node_modules/.bin/cypress run
+```bash
+##launch the Cypress Test Runner
+##in the GUI mode
+npm run cy_open
+## runs all tests and exits with the total number of
+## failures across all tests
+npm run cy_run
+### runs all tests in specific browser
+npm run cy_run_chrome
+### sends test results, videos, screenshots
+### to Cypress dashboard
+npm run cy_run_record
+```
 
 Write tests 
 -----------

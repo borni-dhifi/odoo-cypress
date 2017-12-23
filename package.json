@@ -1,24 +1,28 @@
 {
   "name": "cypress-odoo",
-  "version": "1.0.0",
-  "description": "cypress-odoo️",
+  "version": "1.1.0",
+  "description": "Odoo Framework E2E Testing using Cypress",
   "main": "index.js",
-  "private": true,
   "scripts": {
-    "test": "cypress run"
-  },
-  "repository": {
+    "cy_version": "cypress version",
+    "cy_verify": "cypress verify",
+    "cy_open": "cypress open --global",
+    "cy_run": "cypress run",
+    "cy_run_chrome": "cypress run --browser chrome",
+    "cy_run_record": "cypress run --record",
+    "cy_run_chrome_record": "cypress run --browser chrome --record",
+   },
+   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/hadooc-dev/ci-test/cypress-odoo.git"
+    "url": "git+https://github.com/borni-dhifi/odoo-cypress.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Borni DHIFI",
   "bugs": {
-    "url": "https://gitlab.com/hadooc-dev/ci-test/cypress-odoo/issues"
+    "url": "https://github.com/borni-dhifi/odoo-cypress/issues"
   },
-  "homepage": "https://gitlab.com/hadooc-dev/ci-test/cypress-odoo#README",
+  "homepage": "https://github.com/borni-dhifi/odoo-cypress/blob/master/README.md",
   "devDependencies": {
-    "cypress": "^1.0.2"
+    "cypress": "1.4.0"
   }
 }
